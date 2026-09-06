@@ -1,0 +1,44 @@
+# Sensitive environment files
+.env
+.env.*
+*.env
+
+# Keys and certificates
+*.key
+*.pem
+*.crt
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+
+# Secrets / credentials
+*secret*
+*credential*
+*password*
+*token*
+
+# Logs
+*.log
+logs/
+
+# Backup / temporary files
+*.backup
+*.bak
+*.swp
+*.tmp
+*~
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Shell history
+.bash_history
+.zsh_history
+
+# Local runtime/data
+grafana-data/
+prometheus-data/
