@@ -19,27 +19,6 @@ The setup is based on:
 
 I used the RF Simulator instead of SDR hardware, so the gNB and UE can be tested without a USRP or other radio device.
 
-## Lab topology
-```text
-UE
- |
- |  OAI RF Simulator
- |
-gNB
- |
- |  N2 / N3
- |
-OAI 5G Core
- |
- +-- AMF
- +-- SMF
- +-- UPF
- +-- NRF
- +-- AUSF
- +-- UDM
- +-- UDR
-```
-
 The monitoring path is:
 
 OAI Docker containers
@@ -91,20 +70,6 @@ cAdvisor collects container-level metrics such as:
 Prometheus collects and stores these metrics, and Grafana is used to visualize them.
 
 At the moment, CPU and memory monitoring are available for the OAI network functions. More 5G-specific metrics will be added later.
-
-## Repository structure
-
-```text
-oai-5g-lab/
-├── configs/
-│   ├── gnb/
-│   └── ue/
-├── docs/
-├── monitoring/
-├── screenshots/
-├── .gitignore
-└── README.md
-```
 
 ## Configuration files
 
